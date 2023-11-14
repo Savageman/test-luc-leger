@@ -1,0 +1,131 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Comfortaa:wght@400;700&display=swap');
+
+body {
+  background: #f9fbff;
+  font-family: 'Comfortaa', sans-serif;
+  color: #063450;
+}
+
+header {
+  background: #063450;
+  background: #d5eaff;
+  background: #83c2fe;
+  height: auto;
+  margin-bottom: 2em;
+  display: block;
+}
+
+.wrapper {
+  width: 85%;
+  max-width: 1080px;
+  margin: 0 auto;
+  zoom: 1;
+  display: grid;
+  grid-template-columns: repeat(12, 1fr);
+  gap: 1.4em;
+}
+p{
+  text-align: justify;
+}
+
+
+main {
+  padding-bottom: 1em;
+}
+
+article {
+  display: none;
+}
+:target {
+  display: block;
+}
+
+
+article {
+  grid-column: auto / span 12;
+  position: relative;
+}
+aside {
+  display: block;
+  grid-column: auto / span 12;
+}
+table {
+  border-collapse: collapse;
+}
+th {
+  padding: 0.5em;
+}
+td, th {
+  border: 1px solid black;
+  text-align: center;
+}
+tr {
+  background: white;
+}
+tr:nth-child(2n) {
+  background: #f9fbff;
+}
+th {
+  background: #d5eaff;
+}
+
+nav {
+  display: flex;
+  justify-content: space-between;
+
+  width: 85%;
+  max-width: 1080px;
+  margin: 0 auto;
+  zoom: 1;
+
+  font-weight: bold;
+}
+nav ul {
+  float: none;
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  align-self: flex-end;
+}
+nav li {
+  float: left;
+  height: 3em;
+  padding: 0;
+  border-bottom: transparent solid 3px;
+}
+nav a:hover {
+  background: #add6fe;
+  border-bottom: #063450 solid 3px;
+}
+nav a {
+  text-decoration: none;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 3em;
+  padding: 0 0.7em;
+  color: #063450;
+  font-weight: bold;
+}
+nav a.current {
+  border-bottom: #063450 solid 3px;
+}
+
+
+ul.liste li {
+  margin-bottom: 0.5em;
+}
+
+
+@media (min-width: 700px) {
+  nav {
+
+  }
+  article {
+    grid-column: auto / span 12;
+  }
+  aside {
+    grid-column: auto / span 3;
+  }
+}
